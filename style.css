@@ -20,6 +20,7 @@ html {
     position: absolute;
     top: -2.5rem;
     right: -10rem;
+    transition: transform 1s;
 }
 
 .container {
@@ -36,6 +37,7 @@ html {
     padding: 0 10rem;
     display: grid;
     place-items: center;
+    overflow: hidden;
 }
 
 .card {
@@ -54,6 +56,7 @@ html {
     background: #50c4ed;
     padding: 3rem;
     border-radius: 2.5rem 2.5rem 0 0;
+    transition: background 0.5s;
 }
 
 .card-top-text {
@@ -186,6 +189,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 0.5s;
 }
 
 .price span {
@@ -201,4 +205,32 @@ html {
 
 .price span:last-child {
     font-weight: bold;
+}
+
+.container.alter .card-top {
+    background: #d35246;
+}
+
+.container.alter .price {
+    background: #c02244;
+}
+
+.container.alter {
+    background-image: linear-gradient(to right, rgb(225, 202, 210), rgb(255, 148, 114));
+}
+
+.shoe-2 {
+    width: 33rem;
+    position: absolute;
+    top: -10rem;
+    right: -45rem;
+    transition: transform 1s;
+}
+
+.container.alter .shoe-1 {
+    transform: translateX(-50rem) rotateZ(45deg);
+}
+
+.container.alter .shoe-2 {
+    transform: translateX(-40rem) rotateZ(-45deg);
 }
